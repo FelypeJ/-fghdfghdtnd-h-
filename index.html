@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fruit Power - Ilha da Aventura</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header id="hud">
+      <div class="hud-block">
+        <span class="label">Nível</span>
+        <span id="level">1</span>
+      </div>
+      <div class="hud-block bar-block">
+        <span class="label">HP</span>
+        <div class="bar"><div id="hp-bar" class="bar-fill hp"></div></div>
+      </div>
+      <div class="hud-block bar-block">
+        <span class="label">XP</span>
+        <div class="bar"><div id="xp-bar" class="bar-fill xp"></div></div>
+      </div>
+      <div class="hud-block">
+        <span class="label">Poder</span>
+        <span id="power-name">Nenhum</span>
+      </div>
+      <div class="hud-block">
+        <span class="label">Pontos</span>
+        <span id="score">0</span>
+      </div>
+    </header>
+
+    <canvas id="game-canvas" width="900" height="540"></canvas>
+
+    <div id="message-overlay" class="hidden">
+      <div id="message-box">
+        <h2 id="message-title"></h2>
+        <p id="message-text"></p>
+        <button id="message-btn">Continuar</button>
+      </div>
+    </div>
+
+    <footer id="controls-info">
+      <span><b>WASD / Setas</b> — mover</span>
+      <span><b>Espaço</b> — atacar</span>
+      <span><b>E</b> — habilidade da fruta</span>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
